@@ -1,0 +1,12 @@
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        width: 100%;
+    }
+}

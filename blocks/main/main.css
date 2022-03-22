@@ -1,0 +1,62 @@
+.main {
+    grid-area: main;
+    width: 100%;
+    margin: auto;
+    padding-top: 56px;
+    padding-bottom: 92px;
+    display: grid;
+    grid-template-columns: minmax(48px, 100px) minmax(928px, 984px) minmax(48px, 100px);
+    grid-template-rows: repeat(auto-fill);
+    row-gap: 92px;
+    grid-template-areas:
+    ". lead ."
+    ". intro ."
+    "photo-grid photo-grid photo-grid"
+    ". places ."
+    "cover cover cover";
+    justify-content: center; 
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: #fff;
+    background-color: #2A2C2F;
+}
+
+@media screen and (max-width: 1279px) {
+    .main {
+        grid-template-columns: minmax(24px, 48px) minmax(720px, 928px) minmax(24px, 48px);
+        grid-template-areas:
+        ". lead ."
+        ". intro ."
+        ". photo-grid ."
+        ". places ."
+        "cover cover cover";
+        padding-top: 48px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main {
+        grid-template-columns: minmax(16px, 24px) minmax(618px, 720px) minmax(16px, 24px);
+        row-gap: 88px;
+        grid-template-areas:
+        "lead lead lead"
+        ". intro ."
+        ". photo-grid ."
+        ". places ."
+        "cover cover cover";
+        padding-bottom: 88px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        grid-template-columns: 16px minmax(288px, 618px) 16px;
+        row-gap: 64px;
+        grid-template-areas:
+        "lead lead lead"
+        ". intro ."
+        ". photo-grid ."
+        "places places places"
+        "cover cover cover";
+        padding-bottom: 64px;
+    }
+}

@@ -1,0 +1,8 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: header;
+    width: 100%;
+    max-width: 1184px;
+    margin: auto;
+}
