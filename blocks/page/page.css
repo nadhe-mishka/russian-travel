@@ -5,7 +5,6 @@
     padding-top: 28px;
     display: grid;
     grid-template-columns: 28px minmax(928px,1184px) 28px;
-    grid-template-rows: repeat(auto-fill);
     grid-template-areas:
     ". header ."
     ". main ."
@@ -30,20 +29,12 @@
 @media screen and (max-width: 1023px) {
     .page {
         grid-template-columns: minmax(16px, 24px) minmax(618px, 720px) minmax(16px, 24px);
-        grid-template-areas:
-        ". header ."
-        "main main main"
-        ". footer .";
     }
 }
 
 @media screen and (max-width: 767px) {
     .page {
         grid-template-columns: 16px minmax(288px, 618px) 16px;
-        grid-template-areas:
-        ". header ."
-        "main main main"
-        ". footer .";
         padding-top: 16px;
     }
 }

@@ -6,7 +6,6 @@
     padding-bottom: 92px;
     display: grid;
     grid-template-columns: minmax(48px, 100px) minmax(928px, 984px) minmax(48px, 100px);
-    grid-template-rows: repeat(auto-fill);
     row-gap: 92px;
     grid-template-areas:
     ". lead ."
