@@ -13,10 +13,7 @@
     "photo-grid photo-grid photo-grid"
     ". places ."
     "cover cover cover";
-    justify-content: center; 
-    font-family: 'Inter', 'Arial', sans-serif;
-    color: #fff;
-    background-color: #2A2C2F;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1279px) {
